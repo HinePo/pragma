@@ -1,0 +1,85 @@
+{
+  "counters": {
+    "global_step": 20,
+    "tokens_processed": 165225,
+    "events_processed": 31535,
+    "records_processed": 37,
+    "epoch": 2
+  },
+  "pragma_config": {
+    "vocab_size": 414,
+    "value_vocab_start": 27,
+    "hidden_size": 64,
+    "intermediate_size": 768,
+    "num_heads": 2,
+    "profile_layers": 1,
+    "event_layers": 2,
+    "history_layers": 1,
+    "dropout": 0.1,
+    "max_within_field_position": 32,
+    "rope_base": 10000.0,
+    "usr_token_id": 3,
+    "evt_token_id": 4,
+    "label_smoothing": 0.0,
+    "attention_backend": "padded",
+    "transformers_version": "5.16.1",
+    "architectures": null,
+    "output_hidden_states": false,
+    "return_dict": true,
+    "dtype": null,
+    "chunk_size_feed_forward": 0,
+    "is_encoder_decoder": false,
+    "id2label": {
+      "0": "LABEL_0",
+      "1": "LABEL_1"
+    },
+    "label2id": {
+      "LABEL_0": 0,
+      "LABEL_1": 1
+    },
+    "problem_type": null,
+    "_name_or_path": "",
+    "model_type": "pragma",
+    "output_attentions": false
+  },
+  "masking_config": {
+    "token_mask_prob": 0.15,
+    "event_mask_prob": 0.1,
+    "key_mask_prob": 0.1,
+    "unk_dropout_frac": 0.05,
+    "seed": 20260101
+  },
+  "training_config": {
+    "optimizer": "adamw",
+    "learning_rate": 0.0003,
+    "muon_learning_rate": 0.02,
+    "weight_decay": 0.01,
+    "muon_momentum": 0.95,
+    "adam_betas": [
+      0.9,
+      0.999
+    ],
+    "scheduler": "cosine",
+    "warmup_ratio": 0.01,
+    "mixed_precision": "bf16",
+    "gradient_accumulation_steps": 1,
+    "max_grad_norm": 1.0,
+    "label_smoothing": 0.0,
+    "n_epochs": 2,
+    "total_optimizer_updates": null,
+    "checkpoint_every_n_steps": 100,
+    "log_every_n_steps": 10,
+    "checkpoint_dir": "checkpoints",
+    "mlflow_tracking_uri": "sqlite:///C:\\Users\\levyr\\Desktop\\random-projects\\pragma\\data\\mlflow\\mlflow.db",
+    "mlflow_experiment_name": "pragma-pretraining",
+    "seed": 0
+  },
+  "processor_dir": "data\\processor_small",
+  "processor_hash": "602cb05f9c0dc0a0d4441ace3dcb4e1f07638a6fce5dac869703b3e1b7735e55",
+  "data_manifest_dir": null,
+  "code_revision": null,
+  "dependency_lock_fingerprint": "f535cab333544ce4b2f09ab0b60d01130a59469daee1dd04e8ccc2e0f3cdfebc",
+  "validation_metrics": null,
+  "is_best": false,
+  "saved_at": "2026-09-09T15:45:30.082603+00:00"
+}

@@ -1,0 +1,22 @@
+{
+  "n_schema_issues": 0,
+  "schema_issues_sample": [],
+  "n_leakage_issues": 0,
+  "leakage_issues": [],
+  "null_rate_by_field": {
+    "amount": 0.19607843137254902,
+    "currency": 0.19607843137254902,
+    "direction": 0.19607843137254902,
+    "channel": 0.7980517047583364,
+    "description": 0.36717871862120643,
+    "merchant_name": 0.5157986761583614,
+    "mcc": 0.5455851130261021,
+    "counterparty_id": 0.9047083801673536,
+    "view": 0.803921568627451,
+    "source_currency": 0.9775196702884975
+  },
+  "entities_with_duplicate_event_timestamps": 5,
+  "n_events": 16014,
+  "n_entities": 40,
+  "passed": true
+}

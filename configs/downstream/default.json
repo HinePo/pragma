@@ -1,0 +1,16 @@
+{
+  "lora_r": 8,
+  "lora_alpha": 8,
+  "lora_dropout": 0.05,
+  "target_modules": ["q_proj", "k_proj", "v_proj", "out_proj", "fc1", "fc2"],
+  "learning_rate": 0.001,
+  "weight_decay": 0.01,
+  "adam_betas": [0.9, 0.999],
+  "warmup_ratio": 0.05,
+  "batch_size": 8,
+  "n_epochs": 10,
+  "max_grad_norm": 1.0,
+  "mixed_precision": "bf16",
+  "seed": 0,
+  "modules_to_save": ["classifier"]
+}

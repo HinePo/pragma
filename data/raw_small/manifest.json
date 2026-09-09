@@ -1,0 +1,31 @@
+{
+  "seed": 1337,
+  "n_entities": 40,
+  "n_events": 16014,
+  "history_start": "2024-01-01T00:00:00+00:00",
+  "history_end": "2026-06-30T23:59:59+00:00",
+  "downstream_is_high_value_counts": {
+    "true": 20,
+    "false": 20
+  },
+  "downstream_is_escalating_spender_counts": {
+    "false": 37,
+    "true": 3
+  },
+  "edge_case_counts": {
+    "zero_events": 15,
+    "single_event": 15,
+    "long_history": 5,
+    "same_timestamp": 5
+  },
+  "event_family_counts": {
+    "card_payment": 7277,
+    "app_event": 3140,
+    "topup": 2427,
+    "p2p_transfer": 1526,
+    "atm_withdrawal": 807,
+    "direct_debit": 477,
+    "fx_exchange": 360
+  },
+  "schema_version": 1
+}

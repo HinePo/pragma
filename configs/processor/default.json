@@ -1,0 +1,9 @@
+{
+  "n_numeric_buckets": 16,
+  "bpe_vocab_size": 512,
+  "bpe_min_frequency": 1,
+  "max_within_field_tokens": 8,
+  "max_profile_tokens": 200,
+  "max_event_tokens": 24,
+  "max_history_events": 6500
+}

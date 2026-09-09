@@ -1,0 +1,24 @@
+{
+  "seed": 1337,
+  "n_entities": 500,
+  "n_events": 108022,
+  "history_start": "2024-01-01T00:00:00+00:00",
+  "history_end": "2026-06-30T23:59:59+00:00",
+  "edge_case_counts": {
+    "normal": 455,
+    "single_event": 15,
+    "zero_events": 15,
+    "same_timestamp": 10,
+    "long_history": 5
+  },
+  "event_family_counts": {
+    "card_payment": 48664,
+    "app_event": 21420,
+    "topup": 16330,
+    "p2p_transfer": 10692,
+    "atm_withdrawal": 5546,
+    "direct_debit": 3244,
+    "fx_exchange": 2126
+  },
+  "schema_version": 1
+}

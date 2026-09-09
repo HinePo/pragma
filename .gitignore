@@ -1,0 +1,46 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Tooling caches
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Generated data (regenerate via scripts/generate_synthetic_data.py or the notebook;
+# manifest and validation report are small and kept in git as a record of the last run)
+data/raw/*.parquet
+
+# Fitted processor bundle and tokenized shards (regenerate via
+# scripts/fit_processor.py and scripts/tokenize_shards.py)
+data/processor/
+data/shards/
+
+# MLflow tracking store (regenerate by re-running a training notebook/script;
+# `mlflow ui --backend-store-uri sqlite:///data/mlflow/mlflow.db` reads it)
+data/mlflow/
+data/_notebook_checkpoints/
+
+# Phase 9 pilot corpus + checkpoints (regenerate via 010_pilot_pretraining.ipynb
+# or scripts/generate_synthetic_data.py + fit_processor.py + tokenize_shards.py
+# pointed at data/pilot/*) - larger than the Phase 0/1 smoke-test corpus in
+# data/raw/, so kept in its own directory rather than overwriting it.
+data/pilot/
+
+# Phase 10 embedding-probes-and-baselines corpus + checkpoints + embeddings
+# (regenerate via 011_embedding_probes_and_baselines.ipynb, or
+# scripts/extract_embeddings.py + scripts/run_probe.py against any checkpoint).
+data/probe_pilot/
+
+# Phase 11 LoRA fine-tuning corpus + checkpoints + adapters (regenerate via
+# 012_lora_finetuning.ipynb, or scripts/finetune_lora.py against any checkpoint).
+data/lora_pilot/
+

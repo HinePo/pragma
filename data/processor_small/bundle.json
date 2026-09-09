@@ -1,0 +1,216 @@
+{
+  "schema_version": 1,
+  "config": {
+    "n_numeric_buckets": 16,
+    "bpe_vocab_size": 512,
+    "bpe_min_frequency": 1,
+    "max_within_field_tokens": 8,
+    "max_profile_tokens": 200,
+    "max_event_tokens": 24,
+    "max_history_events": 6500
+  },
+  "special_tokens": {
+    "PAD": 0,
+    "UNK": 1,
+    "MASK": 2,
+    "USR": 3,
+    "EVT": 4,
+    "MILESTONE_PRESENT": 5,
+    "MILESTONE_ABSENT": 6
+  },
+  "key_vocab": {
+    "base_id": 7,
+    "keys": [
+      "age_band",
+      "amount",
+      "balance_quantile",
+      "channel",
+      "country",
+      "currency",
+      "description",
+      "direction",
+      "first_card_payment_at",
+      "first_p2p_at",
+      "first_topup_at",
+      "is_active",
+      "kyc_level",
+      "mcc",
+      "merchant_name",
+      "plan",
+      "signup_at",
+      "source_currency",
+      "type",
+      "view"
+    ]
+  },
+  "numeric_bucketizer": {
+    "n_buckets": 16,
+    "value_base_id": 27,
+    "stats": {
+      "amount": {
+        "boundaries": [
+          1.87,
+          3.02,
+          4.24,
+          5.44,
+          6.77,
+          8.37,
+          10.21,
+          12.37,
+          15.0,
+          18.21,
+          22.2,
+          28.1,
+          36.54,
+          49.85,
+          78.69
+        ],
+        "n_train_values": 12680,
+        "n_zero_values": 135,
+        "null_rate": 0.0
+      }
+    }
+  },
+  "categorical_encoder": {
+    "unk_id": 1,
+    "keys": {
+      "type": {
+        "vocab": {},
+        "n_train_values": 0
+      },
+      "currency": {
+        "vocab": {
+          "EUR": 44,
+          "GBP": 45,
+          "ISK": 46,
+          "PLN": 47,
+          "RON": 48,
+          "USD": 49
+        },
+        "n_train_values": 12680
+      },
+      "direction": {
+        "vocab": {
+          "in": 50,
+          "out": 51
+        },
+        "n_train_values": 12680
+      },
+      "channel": {
+        "vocab": {
+          "bank_transfer": 52,
+          "card": 53,
+          "cash": 54,
+          "open_banking": 55
+        },
+        "n_train_values": 3189
+      },
+      "mcc": {
+        "vocab": {
+          "4111": 56,
+          "5411": 57,
+          "5732": 58,
+          "5812": 59,
+          "6012": 60,
+          "7995": 61,
+          "9999": 62
+        },
+        "n_train_values": 7157
+      },
+      "view": {
+        "vocab": {
+          "analytics": 63,
+          "cards": 64,
+          "crypto": 65,
+          "home": 66,
+          "p2p_amount": 67,
+          "support": 68
+        },
+        "n_train_values": 3089
+      },
+      "source_currency": {
+        "vocab": {
+          "EUR": 69,
+          "GBP": 70,
+          "PLN": 71,
+          "RON": 72,
+          "USD": 73
+        },
+        "n_train_values": 357
+      },
+      "country": {
+        "vocab": {},
+        "n_train_values": 0
+      },
+      "plan": {
+        "vocab": {},
+        "n_train_values": 0
+      },
+      "kyc_level": {
+        "vocab": {},
+        "n_train_values": 0
+      },
+      "age_band": {
+        "vocab": {},
+        "n_train_values": 0
+      },
+      "balance_quantile": {
+        "vocab": {},
+        "n_train_values": 0
+      },
+      "is_active": {
+        "vocab": {},
+        "n_train_values": 0
+      }
+    }
+  },
+  "text_base_id": 74,
+  "train_fingerprint": "d082678c61a00f8c0ef0d212e6d3b30d7179d68db09aea5a3fccaa1b6a7e400a",
+  "fit_timestamp": "2026-09-09T15:41:30.527392+00:00",
+  "python_version": "3.12.9 (main, Feb 12 2025, 14:52:31) [MSC v.1942 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "fit_report": {
+    "n_train_records": 20,
+    "numeric_stats": {
+      "amount": {
+        "boundaries": [
+          1.87,
+          3.02,
+          4.24,
+          5.44,
+          6.77,
+          8.37,
+          10.21,
+          12.37,
+          15.0,
+          18.21,
+          22.2,
+          28.1,
+          36.54,
+          49.85,
+          78.69
+        ],
+        "n_train_values": 12680,
+        "n_zero_values": 135
+      }
+    },
+    "categorical_oov_rates": {
+      "type": 0.0,
+      "currency": 0.0,
+      "direction": 0.0,
+      "channel": 0.0,
+      "mcc": 0.0,
+      "view": 0.0,
+      "source_currency": 0.0,
+      "country": 0.0,
+      "plan": 0.0,
+      "kyc_level": 0.0,
+      "age_band": 0.0,
+      "balance_quantile": 0.0,
+      "is_active": 0.0
+    },
+    "text_oov_rate": 0.0,
+    "text_local_vocab_size": 340,
+    "total_vocab_size": 414
+  }
+}
